@@ -1,0 +1,40 @@
+{
+    "name": "johnson/cow-frame",
+    "description": "light php framework",
+    "keywords": ["framework","cowFrame"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "zhangxiaoshen",
+            "email": "tjtgzxs@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "slim/slim": "^3.0",
+        "catfan/medoo": "^1.7",
+        "monolog/monolog": "^1.23"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "classmap": [
+            "app/Models",
+            "core",
+            "config"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
